@@ -101,7 +101,6 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-.docksal
 .vscode
 .sass_cache
 *.sql.gz
@@ -109,3 +108,4 @@ Temporary Items
 *.tar.gz
 /bootstrap
 /birinciOdev
+/gitlab
