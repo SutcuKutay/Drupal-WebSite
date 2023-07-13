@@ -1,0 +1,75 @@
+@import "global";
+
+body {
+    background-color: $body-bg;
+}
+
+header {
+    background-color: #ffe800;
+}
+
+header img {
+    width: 40%;
+    height: 50%;
+}
+
+.footer img {
+    width: 30%;
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+}
+
+.menu-links div {
+    width: 100%;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: xx-large;
+}
+
+header a:hover {
+    color: white;
+}
+
+footer {
+    background-color: #ffe800;
+}
+
+header .col-md-2 a {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li {
+    margin-bottom: 16px;
+}
+
+footer a {
+    color: black;
+    font-size: x-large;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.footer-center {
+    display: flex;
+    align-items: center;
+}

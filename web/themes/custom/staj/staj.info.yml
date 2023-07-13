@@ -1,0 +1,22 @@
+name: Staj
+type: theme
+description: 'PRU Staj programi temasi'
+core_version_requirement: '>=9.2'
+libraries:
+  - staj/bootstrap-cdn
+  - staj/base
+  - staj/card
+  - staj/icon-button
+  - staj/font-awesome-cdn
+  - staj/cars
+  - staj/parallax
+base theme: stable9
+regions:
+  header: 'Header'
+  branding: 'Branding'
+  slider: 'Slider'
+  content: 'Content'
+  sidebar: 'Sidebar'
+  footer_left: 'Footer Left'
+  footer_right: 'Footer Right'
+  footer_center: 'Footer Center'
