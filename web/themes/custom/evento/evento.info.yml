@@ -1,0 +1,15 @@
+name: Evento
+type: theme
+description: 'Evento Sitesi Teması'
+core_version_requirement: '>=9.2'
+libraries:
+  - evento/base
+  - evento/bootstrap-cdn
+  - evento/event-slider
+base theme: stable9
+regions:
+  header: 'Header'
+  branding: 'Branding'
+  slider: 'Slider'
+  content: 'Content'
+  footer: 'Footer'
