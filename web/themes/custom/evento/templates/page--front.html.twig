@@ -94,24 +94,102 @@
 </header>
 <main>
 	<div>
-		{{page.slider}}
-	</div>
-	<div class="container">
-		{{ page.content }}
-	</div>
-	{# <div class="container">
-			<p>Search Event</p>
-			<form method="GET" action="#">
-				<div class="row">
-					<div class="col">
-						<input type="text" class="form-control" placeholder="First name" aria-label="First name">
-					</div>
-					<div class="col">
-						<input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+		{# {{page.slider}} #}
+		<div id="carouselExampleCaptions" class="carousel slide">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="{{directory}}/images/slider1.png" class="d-block w-100" alt="slider1">
+					<div class="carousel-caption d-none d-md-block">
+						<a href="#" class="btn btn-primary" role="button">TECHNOLOGY</a>
+						<p>Digital Meetup Event 2021</p>
+						<ul>
+							<li>25 Feb, 2021</li>
+							<li>MicDrop South Melbourne, VIC 3205, AU</li>
+						</ul>
+						<div class="row">
+							<a href="#" class="btn btn-primary col" role="button">Purchase Ticket</a>
+							<a href="#" class="btn btn-primary col" role="button">View Details</a>
+						</div>
 					</div>
 				</div>
-			</form>
-			<p>Discover upcoming events</p>
-		</div> #}
+				<div class="carousel-item">
+					<img src="{{directory}}/images/slider2.png" class="d-block w-100" alt="slider2">
+					<div class="carousel-caption d-none d-md-block">
+						<a href="#" class="btn btn-primary" role="button">TECHNOLOGY</a>
+						<p>Digital Conference Event 2021</p>
+						<ul>
+							<li>25 Feb, 2021</li>
+							<li>MicDrop South Melbourne, VIC 3205, AU</li>
+						</ul>
+						<div class="row">
+							<a href="#" class="btn btn-primary col" role="button">Purchase Ticket</a>
+							<a href="#" class="btn btn-primary col" role="button">View Details</a>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="{{directory}}/images/slider3.png" class="d-block w-100" alt="slider3">
+					<div class="carousel-caption d-none d-md-block">
+						<a href="#" class="btn btn-primary" role="button">TECHNOLOGY</a>
+						<p>Digital Marketing Event 2021</p>
+						<ul>
+							<li>25 Feb, 2021</li>
+							<li>MicDrop South Melbourne, VIC 3205, AU</li>
+						</ul>
+						<div class="row">
+							<a href="#" class="btn btn-primary col" role="button">Purchase Ticket</a>
+							<a href="#" class="btn btn-primary col" role="button">View Details</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</div>
+	<div class="container py-4">
+		{{ page.content }}
+	</div>
+	<div class="bg-danger py-4">
+		<div class="container">
+			<h1 class="text-center">
+				More Featured Events
+			</h1>
+			<hr>
+			{{page.freeevents}}
+		</div>
+	</div>
+	<div class="container py-4">
+		<h1 class="text-center">
+			Speakers
+		</h1>
+		<hr>
+		{{page.speakers}}
+	</div>
+	{# <div class="container">
+											<p>Search Event</p>
+											<form method="GET" action="#">
+												<div class="row">
+													<div class="col">
+														<input type="text" class="form-control" placeholder="First name" aria-label="First name">
+													</div>
+													<div class="col">
+														<input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+													</div>
+												</div>
+											</form>
+											<p>Discover upcoming events</p>
+										</div> #}
 </main>
 <footer></footer>

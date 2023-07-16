@@ -17,3 +17,9 @@ event-slider:
   css:
     base:
       css/event-slider/event-slider.css: {}
+
+speaker-image:
+  version: 1.0.0
+  css:
+    base:
+      css/speakers/speakers.css: {}
