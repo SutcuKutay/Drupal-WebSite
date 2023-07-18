@@ -5,8 +5,10 @@ core_version_requirement: '>=9.2'
 libraries:
   - evento/base
   - evento/bootstrap-cdn
+  - evento/font-awesome-cdn
   - evento/event-slider
   - evento/speaker-image
+  - evento/event
 base theme: stable9
 regions:
   header: 'Header'
@@ -16,3 +18,4 @@ regions:
   footer: 'Footer'
   freeevents: 'Free Events'
   speakers: 'Speakers'
+  news: 'News'

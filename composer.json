@@ -27,6 +27,7 @@
         "drupal/geolocation": "^3.12",
         "drupal/gin": "^3.0@RC",
         "drupal/iframe": "^2.23",
+        "drupal/map_provider": "^1.0",
         "drupal/metatag": "^2.0",
         "drupal/minifyhtml": "^2.0",
         "drupal/paragraphs": "^1.15",

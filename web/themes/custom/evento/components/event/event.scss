@@ -1,0 +1,23 @@
+.page-event-content {
+    transform: translateY(-200px);
+    a {
+        text-decoration: none;
+    }
+}
+
+.event-list {
+    .card {
+        min-height: 480px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-title {
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}

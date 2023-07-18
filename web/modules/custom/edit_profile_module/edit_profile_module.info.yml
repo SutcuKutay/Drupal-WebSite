@@ -1,0 +1,5 @@
+name: Edit Profile Module
+type: module
+package: Custom
+description: 'For editing user name and surname'
+core_version_requirement: ^9.2 || ^10

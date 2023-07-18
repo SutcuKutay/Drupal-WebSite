@@ -1,0 +1,4 @@
+karsilama sayfasi erisimi:
+  title: 'karsilama sayfasi erisimi'
+  description: 'karsilama sayfasi erisimi izni.'
+  restrict access: true

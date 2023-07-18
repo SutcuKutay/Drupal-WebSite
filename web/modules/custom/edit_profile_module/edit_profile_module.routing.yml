@@ -1,0 +1,10 @@
+edit_profile_module.edit_form:
+  # The path always starts with a leading forward-slash.
+  path: '/edit-form'
+  # Defines the default properties of a route.
+  defaults:
+    # For page callbacks that return a render array use _controller.
+    _form: 'Drupal\edit_profile_module\Form\EditForm'
+  requirements:
+    _permission: 'access content, access user profiles'
+    #_role: 'authenticated'
