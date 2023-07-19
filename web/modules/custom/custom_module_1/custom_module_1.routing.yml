@@ -31,3 +31,24 @@ custom_module_1.contact_form:
   requirements:
     _permission: 'access content'
     #_role: 'authenticated'
+
+custom_module_1.contact_form_custom:
+  path: '/contact-form-custom-access'
+  defaults:
+    _form: 'Drupal\custom_module_1\Form\ContactForm'
+  requirements:
+    _custom_access: '\Drupal\custom_module_1\Controller\ExampleController::access'
+
+custom_module_1.contact_form_custom_2:
+  path: '/contact-form-custom-access-2'
+  defaults:
+    _form: 'Drupal\custom_module_1\Form\ContactForm'
+  requirements:
+    _custom_access: '\Drupal\custom_module_1\Controller\ExampleController::access2'
+
+custom_module_1.contact_form_custom_3:
+  path: '/contact-form-custom-access-3'
+  defaults:
+    _form: 'Drupal\custom_module_1\Form\ContactForm'
+  requirements:
+    _custom_access: '\Drupal\custom_module_1\Controller\ExampleController::access3'

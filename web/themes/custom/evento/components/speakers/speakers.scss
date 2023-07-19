@@ -8,3 +8,20 @@
     text-align: center;
     border-style: none !important;
 }
+
+.speaker-bg-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    h1 {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 20%;
+    }
+}
+
+.speaker-photo img {
+    width: 100%;
+    height: auto;
+}

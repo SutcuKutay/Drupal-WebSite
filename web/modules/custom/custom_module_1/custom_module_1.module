@@ -1,5 +1,8 @@
 <?php
 
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Access\AccessResult;
+
 /**
  * Implements hook_theme().
  */
@@ -10,3 +13,19 @@ function custom_module_1_theme($existing, $type, $theme, $path) {
     ],
   ];
 }
+
+// function custom_module_1_entity_access(EntityInterface $entity, $operation, \Drupal\Core\Session\AccountInterface $account) {
+//   $entityid = $entity->getEntityType()->id();
+//   if ($entityid == "node" && $entity->bundle() == "component") {
+//     // $visible = $entity->field_basic_page_anonymous->value;
+//     $userID = \Drupal::currentUser()->id();
+//     $currentUser = \Drupal::entityTypeManager()->getStorage('user')->load($userID);
+//     if ($currentUser->status->value != 1) {
+//       return AccessResult::forbidden();
+//     }
+//     // if ($visible != 1 && \Drupal::currentUser()->isAnonymous() == true) {
+//     //   return AccessResult::forbidden();
+//     // }
+//     return AccessResult::neutral();
+//   }
+// }

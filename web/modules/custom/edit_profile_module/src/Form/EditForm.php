@@ -17,17 +17,25 @@ class EditForm extends FormBase {
     }
 
     public function buildForm(array $form, FormStateInterface $form_state) {
+        // $user = \Drupal::currentUser()->id();
+        $uid = \Drupal::routeMatch()->getParameter('uid');
+        $currentUser = \Drupal::entityTypeManager()->getStorage('user')->load($uid);
+
+        $name = $currentUser->field_user_name->value;
+        $surname = $currentUser->field_user_surname->value;
 
         $form['isim'] = [
             '#type' => 'textfield',
             '#title' => $this->t('isim'),
-            '#required' => TRUE // bu alanı zorunlu yapar
+            '#required' => TRUE, // bu alanı zorunlu yapar
+            '#default_value' => $name,
         ];
 
         $form['soyad'] = [
             '#type' => 'textfield',
             '#title' => $this->t('soyad'),
-            '#required' => TRUE // bu alanı zorunlu yapar
+            '#required' => TRUE, // bu alanı zorunlu yapar
+            '#default_value' => $surname,
         ];
 
         $form['submit'] =  [
@@ -50,10 +58,11 @@ class EditForm extends FormBase {
     }
 
     public function submitForm(array &$form, FormStateInterface $form_state) {
+        $uid = \Drupal::routeMatch()->getParameter('uid');
         $isim = $form_state->getValue('isim');
         $soyad = $form_state->getValue('soyad');
-        $userID = \Drupal::currentUser()->id();
-        $currentUser = \Drupal::entityTypeManager()->getStorage('user')->load($userID);
+        // $userID = \Drupal::currentUser()->id();
+        $currentUser = \Drupal::entityTypeManager()->getStorage('user')->load($uid);
         // $currentUser->set('Ad', $isim);
         // $currentUser->set('Soyad', $soyad);
         $currentUser->field_user_name->value = $isim;
