@@ -1,0 +1,5 @@
+name: 'last_module'
+type: module
+description: 'Haftanın son modulu'
+package: Custom
+core_version_requirement: ^10
